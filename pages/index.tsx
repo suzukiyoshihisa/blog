@@ -3,6 +3,12 @@ import Hero from "components/hero";
 
 export default function Home() {
   return (
-    <Hero/>
+    <>
+      <Hero
+        title = "Home"
+        subtitle = "This is an home page."
+        imageOn = {true}
+      />
+    </>
   );
 }

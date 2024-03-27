@@ -3,8 +3,11 @@ import Hero from "components/hero";
 export default function Blog() {
   return (
     <>
-      blog
-      <Hero/>
+      <Hero
+        title="Blog"
+        subtitle="This is a blog page."
+        imageOn={true}
+      />
     </>
   );
 }

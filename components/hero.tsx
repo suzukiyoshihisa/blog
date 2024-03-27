@@ -1,26 +1,13 @@
-const subtitle = "アウトプットしていく!!!サイト";
+import styles from 'styles/hero.module.css';
 
-function EachPost(props: { title: string }) {
-  return (
-    <article>
-      <a href="post.html">
-        <h3>{props.title}</h3>
-      </a>
-    </article>
-  );
-}
-
-export default function Hero() {
+export default function Hero({ title, subtitle, imageOn = false }: { title: string, subtitle: string, imageOn: boolean}) {
   return (
   <>
-    <hr />
-    <h1 className="hero" style={{color: 'red' }}>Home</h1>
-    <p>{subtitle}</p>
-    <section>
-      <EachPost title="スケジュール管理と猫の理論"/>
-      <EachPost title="音楽が呼び起こす" />
-    </section>
-    <hr />
+    <div className={styles.text}>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.subtitle}>{subtitle}</p>
+      {imageOn && <figure>[画像]</figure>}
+    </div>
   </>
   );
 }

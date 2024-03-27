@@ -3,8 +3,11 @@ import Hero from "components/hero";
 export default function About() {
   return (
     <>
-      hoge
-      <Hero/>
+      <Hero
+        title = "About"
+        subtitle = "This is an about page."
+        imageOn = {true}
+      />
     </>
   );
 }
