@@ -1,7 +1,9 @@
+import Logo from "components/logo";
+
 export default function Footer() {
   return (
     <footer>
-      <h1>footer</h1>
+      <Logo boxOn={false}/>
     </footer>
   );
 }
